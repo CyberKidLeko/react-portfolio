@@ -90,7 +90,7 @@ body, html {
 /*sidebar for bigger screens*/
 .sidebar {
   width: 300px;
-  min-width: 270px;
+  min-width: 300px;
   background-color: #34495E;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -123,9 +123,9 @@ body, html {
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
-  overflow-y: hidden;
+  /*overflow-x: hidden;*/
   overflow-wrap: wrap;
-  overflow: scroll;
+  overflow-y: scroll;
   padding: 20px;
   background-color: transparent;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -148,7 +148,7 @@ body, html {
   background-color: #1c1c1e;
   color: white;
   border-radius: 10px;
-  overflow: hidden; 
+  overflow-y: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   transition: transform 0.3s ease, box-shadow 0.3s ease; 
   width: 100px;

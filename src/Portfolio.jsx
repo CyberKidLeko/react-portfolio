@@ -1,5 +1,12 @@
 import { useState, useEffect } from 'react';
 import './index.css';
+import githubLogo from './assets/github-mark.png';
+import linkedInLogo from './assets/LI-In-Bug.png';
+import emailLogo from './assets/icons8-gmail-48.png';
+import portfolioImg from './assets/portfolio.jpg';
+import paintImg from './assets/paint.jpg';
+import tutoringAppImg from './assets/tutoringApp.jpeg';
+import heartsImg from './assets/hearts.jpeg'
 
 function Portfolio() {
   const [visibleSection, setVisibleSection] = useState('about');
@@ -150,18 +157,28 @@ function Portfolio() {
               <h3>Projects</h3>
               <div className="projectSpace">
                 <a href="https://github.com/CyberKidLeko/ng_ngwenya" className="project-button">
-                  <img src="src/assets/portfolio.jpg" alt="Project 1" className="project-image" />
-                  <div className="project-text">This Website!</div>
+                  <img src={portfolioImg} alt="Project 1" className="project-image" />
+                  <div className="project-text">This Website!(HTML, CSS, JS)</div>
                 </a>
 
                 <a href="https://github.com/CyberKidLeko/DasmotoArtsAndCafts" className="project-button">
-                  <img src="src/assets/paint.jpg" alt="Dasmoto's Arts and Crafts" className="project-image" />
+                  <img src={paintImg} alt="Dasmoto's Arts and Crafts" className="project-image" />
                   <div className="project-text">Dasmoto Arts and Crafts!</div>
                 </a>
 
                 <a href="https://github.com/CyberKidLeko/TutoringApp2" className="project-button">
-                  <img src="src/assets/tutoringApp.jpeg" alt="tutoring app" className="project-image" />
+                  <img src={tutoringAppImg} alt="Tutoring App" className="project-image" />
                   <div className="project-text">Tutoring App</div>
+                </a>
+
+                
+                <a href="https://github.com/CyberKidLeko/Go_out_with_me_please" className="project-button">
+                    <img src={heartsImg} alt="go out with me project" className="project-image" />
+                    <div className="project-text">Date?</div>
+                </a>
+                <a href="https://github.com/CyberKidLeko/ng_ngwenya" className="project-button">
+                  <img src={portfolioImg} alt="Project 1" className="project-image" />
+                  <div className="project-text">This Website!(In React)</div>
                 </a>
               </div>
             </div>
@@ -171,13 +188,13 @@ function Portfolio() {
       <h3>Connect with Me</h3>
       <div className="social-links">
         <a href="https://github.com/CyberKidLeko" target="_blank" rel="noopener noreferrer">
-          <img src="/src/assets/github-mark.png" alt="GitHub" />
+          <img src={githubLogo} alt="GitHub" />
         </a>
         <a href="www.linkedin.com/in/ngwenya-nomsa" target="_blank" rel="noopener noreferrer">
-          <img src="/src/assets/LI-In-Bug.png" alt="LinkedIn" />
+          <img src={linkedInLogo} alt="LinkedIn" />
         </a>
         <a href="mailto:nkululekongwenya123@gmail.com">
-          <img src="/src/assets/icons8-gmail-48.png" alt="Email" />
+          <img src={emailLogo} alt="Email" />
         </a>
       </div>
     </div>
@@ -192,8 +209,7 @@ function Portfolio() {
               <p><strong>January 2022 - Present</strong></p>
               <ul>
                 <li>Major: Computer Programming, SQL</li>
-                <li>Department GPA: 3.4</li>
-                <li>Cumulative GPA: 3.2</li>
+                
               </ul>
 
               <h4>Codecademy</h4>
