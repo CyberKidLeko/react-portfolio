@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import './index.css';
-import githubLogo from './assets/github-mark.png';
-import linkedInLogo from './assets/LI-In-Bug.png';
+
 import emailLogo from './assets/icons8-gmail-48.png';
 import portfolioImg from './assets/portfolio.jpg';
 import paintImg from './assets/paint.jpg';
@@ -188,10 +187,10 @@ function Portfolio() {
       <h3>Connect with Me</h3>
       <div className="social-links">
         <a href="https://github.com/CyberKidLeko" target="_blank" rel="noopener noreferrer">
-          <img src={githubLogo} alt="GitHub" />
+          <img src='./src/assets/github-mark.png' alt="GitHub" />
         </a>
         <a href="www.linkedin.com/in/ngwenya-nomsa" target="_blank" rel="noopener noreferrer">
-          <img src={linkedInLogo} alt="LinkedIn" />
+          <img src='./src/assets/github-mark.png' alt="LinkedIn" />
         </a>
         <a href="mailto:nkululekongwenya123@gmail.com">
           <img src={emailLogo} alt="Email" />
